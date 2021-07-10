@@ -138,7 +138,7 @@ spec:
     spec:
       containers:
       - name: result
-        image: dockersamples/examplevotingapp_result:before
+        image: docker push 156739282338.dkr.ecr.ap-south-1.amazonaws.com/vot:latest
         ports:
         - containerPort: 80
           name: result
@@ -178,7 +178,7 @@ spec:
     spec:
       containers:
       - name: vote
-        image: dockersamples/examplevotingapp_vote:before
+        image: docker push 156739282338.dkr.ecr.ap-south-1.amazonaws.com/vot:latest
         ports:
         - containerPort: 80
           name: vote
@@ -213,5 +213,5 @@ spec:
         app: worker
     spec: 
       containers: 
-      - image: dockersamples/examplevotingapp_worker
+      - image: docker push 156739282338.dkr.ecr.ap-south-1.amazonaws.com/vot:latest
         name: worker
